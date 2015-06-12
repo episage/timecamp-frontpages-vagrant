@@ -553,7 +553,7 @@ if [[ $ping_result == "Connected" ]]; then
 	if [[ ! -d /srv/www/wordpress-default ]]; then
 		echo "Downloading timecamp-frontpages"
 		cd /srv/www/
-		git clone https://github.com/episage/timecamp-frontpages.git
+		git clone https://github.com/episage/timecamp-frontpages.git wordpress-default
 		cd /srv/www/timecamp-frontpages
 		echo "Configuring timecamp-frontpages..."
 		wp core config --dbname=wordpress_default --dbuser=wp --dbpass=wp --quiet --extra-php <<PHP
